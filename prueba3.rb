@@ -26,18 +26,19 @@ T.method1
 #03 Se tiene el siguiente código, se pide convertir la clase en un módulo
 
 
-module Prueba
-	def algo
-		puts "@@a=5"
+
+
+
+module Prueba 
+	A = 5 
+	def self.A
 	end
-
+	puts "algo"
 end
 
-class calculo_nota 
-	include Prueba
-end
-mauro = Prueba.new
-mauro.calculo_nota
+puts Prueba::A
+puts ""
+
 
 
 
